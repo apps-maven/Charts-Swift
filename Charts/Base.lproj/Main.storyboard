@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qst-Te-taR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Charts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AkK-Wb-FR2">
+                                <rect key="frame" x="5" y="50" width="365" height="507"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQA-Wm-np2" customClass="Chart" customModule="Charts" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="0.0" width="600" height="481.5"/>
+                                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="600" id="NVV-1L-K49"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="jQA-Wm-np2" secondAttribute="trailing" constant="15" id="65e-HL-HBV"/>
+                                    <constraint firstItem="jQA-Wm-np2" firstAttribute="leading" secondItem="AkK-Wb-FR2" secondAttribute="leading" constant="25" id="6S8-CB-dER"/>
+                                    <constraint firstItem="jQA-Wm-np2" firstAttribute="top" secondItem="AkK-Wb-FR2" secondAttribute="top" id="GsH-4l-2ZH"/>
+                                    <constraint firstAttribute="bottom" secondItem="jQA-Wm-np2" secondAttribute="bottom" id="W00-kf-Ea6"/>
+                                    <constraint firstItem="jQA-Wm-np2" firstAttribute="height" secondItem="AkK-Wb-FR2" secondAttribute="height" multiplier="0.95" id="lxG-b4-ToK"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AkK-Wb-FR2" secondAttribute="trailing" constant="5" id="ZNJ-C6-HF7"/>
+                            <constraint firstItem="AkK-Wb-FR2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="f7C-Qe-pkd"/>
+                            <constraint firstItem="AkK-Wb-FR2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="oUc-Sp-V17"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AkK-Wb-FR2" secondAttribute="bottom" constant="110" id="xCb-nM-7cl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="viewChart" destination="jQA-Wm-np2" id="As2-AN-PUI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="67.916041979010501"/>
+        </scene>
+        <!--Line Chart View Controller-->
+        <scene sceneID="bKk-i2-9og">
+            <objects>
+                <viewController id="Qst-Te-taR" customClass="LineChartViewController" customModule="Charts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Hc-76-HIZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZU-OV-0B7" customClass="Chart" customModule="Charts" customModuleProvider="target">
+                                <rect key="frame" x="45" y="92" width="285" height="481.5"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAd-ZS-rOe">
+                                <rect key="frame" x="148.5" y="603.5" width="78" height="30"/>
+                                <state key="normal" title="Draw Chart"/>
+                                <connections>
+                                    <action selector="btnDrawChartAction:" destination="Qst-Te-taR" eventType="touchUpInside" id="0iq-tK-gUL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CAd-ZS-rOe" firstAttribute="top" secondItem="ZZU-OV-0B7" secondAttribute="bottom" constant="30" id="HdB-3Y-jJB"/>
+                            <constraint firstItem="ZZU-OV-0B7" firstAttribute="top" secondItem="eEr-7o-s8X" secondAttribute="top" constant="72" id="I9E-WF-O0w"/>
+                            <constraint firstAttribute="trailing" secondItem="ZZU-OV-0B7" secondAttribute="trailing" constant="45" id="R7G-ai-4ez"/>
+                            <constraint firstItem="ZZU-OV-0B7" firstAttribute="leading" secondItem="9Hc-76-HIZ" secondAttribute="leading" constant="45" id="SI9-a1-phy"/>
+                            <constraint firstItem="CAd-ZS-rOe" firstAttribute="centerX" secondItem="ZZU-OV-0B7" secondAttribute="centerX" id="mqJ-vD-VlO"/>
+                            <constraint firstItem="eEr-7o-s8X" firstAttribute="bottom" secondItem="ZZU-OV-0B7" secondAttribute="bottom" constant="93.5" id="ov2-Mi-ObQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eEr-7o-s8X"/>
+                    </view>
+                    <connections>
+                        <outlet property="viewChart" destination="ZZU-OV-0B7" id="mmO-iG-AHH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V7k-g9-eQc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="67.916041979010501"/>
+        </scene>
+    </scenes>
+</document>
