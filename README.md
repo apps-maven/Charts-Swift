@@ -8,7 +8,6 @@
 
 <h4>Screenshots</h4><br>
 <p>
-<img src="https://user-images.githubusercontent.com/54585056/64342614-8ae3a000-d008-11e9-8c5e-cc7799002ed4.png">
 <br><br><br><img src="https://user-images.githubusercontent.com/38749215/63517907-8483fd00-c50d-11e9-9ad3-fc05be6fa1ad.PNG"></p><br>
 <h4>Requirements</h4>
 <p>* Xcode 9.4 +</p>
