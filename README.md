@@ -8,14 +8,15 @@
 
 <h4>Screenshots</h4><br>
 <p>
-<br><br><br><img src="https://user-images.githubusercontent.com/54585056/64342614-8ae3a000-d008-11e9-8c5e-cc7799002ed4.png"></p><br>
+<br><br><br><img src="https://user-images.githubusercontent.com/54585056/64342614-8ae3a000-d008-11e9-8c5e-cc7799002ed4.png" height="300px" width="600px></p><br>
 <h4>Requirements</h4>
 <p>* Xcode 9.4 +</p>
 
 <h4>Usage</h4><br>
 
 <p>dataSource: 
-
+        let viewChart = chart()
+        
         let data2 = [7,80,0,60,90.0,45,85,100]
         
         let data1 = [0,40,65,35,80.0,55,65]
