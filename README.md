@@ -64,7 +64,7 @@
         
         viewChart.showYLabelsAndGrid = false
         
-        viewChart.add(arrChart)</p>
+        viewChart.add(arrChart)
 
 <p><strong>
 Version: 1.0<br>
