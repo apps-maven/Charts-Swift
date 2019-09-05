@@ -73,6 +73,6 @@ Initial Build</strong></p>
 
 <h4>Let us know!</h4>
 <p>
-We’d be really happy if you sent us links to your projects where you use our component. Just send an email to <a href="abhinandan@appsmaventech.com">abhinandan</a> And do let us know if you have any questions or suggestion regarding the animation.</p>
+We’d be really happy if you sent us links to your projects where you use our component. Just send an email to <a href="abhinandan@appsmaventech.com">abhinandan</a> And do let us know if you have any questions or suggestions regarding the animation.</p>
 <p>
 P.S. We’re going to publish more awesomeness wrapped in code and a tutorial on how to make better user-interactive charts. Stay tuned!</p>
