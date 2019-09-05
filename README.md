@@ -1,12 +1,21 @@
 # Charts-Swift
 
-<img src="https://user-images.githubusercontent.com/54585056/64342614-8ae3a000-d008-11e9-8c5e-cc7799002ed4.png"/>
+<h1> Charts-swift</h1>
 
 
+<h5>This project is demonstrating how to make chart Using swift.</h5>
 
 
+<h4>Screenshots</h4><br>
+<p>
+<img src="https://user-images.githubusercontent.com/54585056/64342614-8ae3a000-d008-11e9-8c5e-cc7799002ed4.png">
+<br><br><br><img src="https://user-images.githubusercontent.com/38749215/63517907-8483fd00-c50d-11e9-9ad3-fc05be6fa1ad.PNG"></p><br>
+<h4>Requirements</h4>
+<p>* Xcode 9.4 +</p>
 
-    dataSource: 
+<h4>Usage</h4><br>
+
+<p>dataSource: 
 
         let data2 = [7,80,0,60,90.0,45,85,100]
         
@@ -56,11 +65,14 @@
         
         viewChart.showYLabelsAndGrid = false
         
-        viewChart.add(arrChart)
-        
-        
-        
-       <h4>Let us know!</h4> 
-<p>We’d be really happy if you sent us links to your projects where you use our component. Just send an email to amarjeet@appsmaventech.com And do let us know if you have any questions or suggestion regarding the animation.
+        viewChart.add(arrChart) </p>
 
-P.S. We’re going to publish more awesomeness wrapped in code and a tutorial on how to make UI for Android (iOS) better than better. Stay tuned!</p>
+<p><strong>
+Version: 1.0<br>
+Initial Build</strong></p>
+
+<h4>Let us know!</h4>
+<p>
+We’d be really happy if you sent us links to your projects where you use our component. Just send an email to <a href=“abhinandan@appsmaventech.com">Abhinandan</a> And do let us know if you have any questions or suggestion regarding the animation.</p>
+<p>
+P.S. We’re going to publish more awesomeness wrapped in code and a tutorial on how to make better user-interactive charts. Stay tuned!</p>
